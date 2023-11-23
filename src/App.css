@@ -9,9 +9,7 @@
   text-align: center;
   padding: 1rem;
 }
-.main-para{
 
-}
 .email{
   display: flex;
   justify-content: space-around;
@@ -29,11 +27,78 @@
   outline: none !important;
 }
 .navbar{
+  margin-left: 1.3rem;
+ width: 90vw;
   display: flex;
   justify-content: space-around;
 }
 .navbar > button{
+  color: aliceblue;
+  margin: 2rem 0;
+  height: 4rem;
+  min-width: 5rem;
  font-size: 1.4rem;
-  padding: 10px;
-  border: 1px solid black;
+  border:  none;
+  background-color: transparent;
+
+
+  
 }
+.All{
+  background: #f2f0f03a !important;
+  border-radius: 1rem;
+}
+.cardbx{
+  background-image: url('https://i.seadn.io/s/production/ed4fa381-a6e9-4d0a-95a6-f7ec228120cb.png?w=500&auto=format');
+  height: 35rem;
+  width: 95vw;
+  opacity: 0.8;
+  position: relative;
+  margin: 0 auto;
+}
+.info{
+  height: 100%;
+  margin-left: 2rem;
+  position: absolute;
+  top: 28em;
+  color: aliceblue;
+  font-weight: 800;
+  
+  
+}
+.info>h1{
+  font-size: 2rem;
+}
+.info>p{
+  margin-top: 1rem;
+  font-size: small;
+}
+
+.content{
+  position: relative;
+  z-index: 1; /* Bring content to the foreground */
+   /* Black with 50% transparency */
+   padding-bottom:2rem;
+}
+
+  .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.seadn.io/s/production/dafb3c3b-f89e-41c1-a0d0-6239bd07e068.jpg?auto=format&dpr=1&w=1920');    filter: blur(19px);
+    opacity: 0.7; /* Apply blur to the background */
+    z-index: -1; /* Behind the content */
+  }
+ .container{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+ }
+ .container>.item1>p,.container>.item2>p{
+  color: grey;
+  font-size: 1.2rem;
+  font-weight: 900;
+ }
