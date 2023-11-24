@@ -5,8 +5,11 @@ const { Meta } = Card;
 const CollectCard = ({img,name,cond}) => (
   <Card
     style={{
-      width: 200,
-      padding:0
+      width: '22rem',
+      padding:0,
+      margin:'0 auto',
+      boxShadow:'0 4px 8px 0 rgba(0, 0, 0, 0.6)',
+      marginBottom:'2rem'
       
     }}
     bodyStyle={{padding: "0"}}
@@ -18,20 +21,18 @@ const CollectCard = ({img,name,cond}) => (
     }
    
   >
-    {/* <Meta 
-      title="Captain & company - Certified"/> */}
-     
-      <h2 style={{fontSize:'1.3rem', padding:'1rem'}} >{name}</h2>
+  
+      <h2 style={{fontSize:'1.5rem', padding:'1rem'}} >{name}</h2>
       {cond?null :
       <div className="container">
         
       <div className="item1">
-        <p>Floor</p>
-        <h2>0.02ETh</h2>
+        <p  style={{fontSize:'1.7rem'}}> Floor</p>
+        <h2  style={{fontSize:'1.2rem'}}>0.02ETh</h2>
       </div>
       <div className="item2">
-        <p>Total Volume</p>
-        <h2>6 ETh</h2>
+        <p  style={{fontSize:'1.7rem'}}>Total Volume</p>
+        <h2  style={{fontSize:'1.2rem'}}>6 ETh</h2>
       </div>
       </div>
       }

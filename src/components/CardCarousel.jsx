@@ -14,6 +14,7 @@ const CardCarousel = () => (
   waitForAnimate={true}
   dots={false}
   effect={'scrollx'}
+  
   	>
     <div>
         <MainSecCard/>

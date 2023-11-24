@@ -3,29 +3,7 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 10px;
 }
-.footer{
-  background-color: #1868b7;
-  color: aliceblue;
-  text-align: center;
-  padding: 1rem;
-}
 
-.email{
-  display: flex;
-  justify-content: space-around;
-}
-.signup-btn{
-  background-color: #3b8ddf;
-  color: white;
-  height: 3.3rem;
-  width: 6.5rem;
-  text-align: center;
-  border-radius: 0.75rem;
-  border: none;
-}
-.text-field{
-  outline: none !important;
-}
 .navbar{
   margin-left: 1.3rem;
  width: 90vw;
@@ -102,3 +80,130 @@
   font-size: 1.2rem;
   font-weight: 900;
  }
+
+ .footer{
+  background-color: #1868b7;
+}
+.input{
+  border-radius: 8px;
+  width: 30rem;
+  border: none;
+  height: 1rem;
+  padding: 12px;
+}
+.button{
+  margin: 0 1rem;
+  padding: 12px 24px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  background-color: #2081e2;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.button:hover{
+  opacity: 0.7;
+  transition: ease-in-out;
+}
+.logo{
+  padding: 12px;
+  background-color: #2081e2;
+  border-radius: 8px;
+  font-size: 10px;
+  cursor: pointer;
+}
+.logo:hover{
+  border: 1px solid white;
+  transition: ease-in-out;
+}
+
+.section1{
+  padding: 2rem 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+  
+}
+.section1 div p{
+  width: 70%;
+}
+.u-l ul li{
+  list-style: none;
+  color: aliceblue;
+  margin: 8px;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+
+/* Section 2 */
+.Section2{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: whitesmoke;
+  padding: 2rem;
+}
+.para1{
+  width: 25rem;
+}
+.Section2 a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.Section2 a:hover{
+  font-size: 17px;
+  transition: ease-in-out;
+}
+.sec-list p{ 
+  margin: 1.2rem 0;
+}
+
+/*  */
+.Section3, .Sec3-div{
+   display: flex; 
+   justify-content: space-between;
+   padding: 12px;
+   color: whitesmoke;
+}
+.Sec3-div p{
+  padding: 0 12px;
+}
+@media screen and (max-width: 984px) {
+  .input{
+    width: auto;
+  }
+  .button{
+    padding: 12px;
+  }
+  .center{
+    text-align: center;
+  }
+  .section1 div p{
+    width: auto;
+  }
+  .sec2 h2{
+    margin: 12px 0;
+  }
+  .para1{
+    width: auto;
+  }
+  .Section2{
+    text-align: center;
+  }
+  .Section3{
+    display: block;
+    text-align: center;
+  }
+  .center div div{
+    margin: 16px 0
+  }
+}
